@@ -42,5 +42,5 @@ If helper is loaded in autoload you can use it in evere view file like:
 ```sh
 <?php echo currency($row->price);?> <?php echo label();?>
 ```
-where we have data from database in this example object $row->price and <?php echo label();?> thath call helper function to display currency label from session. Use sql file to see table structure.
+where we pass data from database in helper function like in this example object $row->price and <?php echo label();?> thath call helper function to display currency label from session. Use sql file to see table structure.
 
