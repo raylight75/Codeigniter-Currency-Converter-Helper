@@ -9,7 +9,10 @@ First set link in your site with
 ```sh
 <a href="<?php echo base_url() ?>home/set_currency/usd or eur or bgn">
 ```
-Then this helper simply set the name of the currency in session data like - $this->session->set_userdata('set_currency', $currency);
+Then this helper simply set the name of the currency in session data like
+```sh
+$this->session->set_userdata('set_currency', $currency);
+```
 You need function in some controller to set data - Example:
 ```sh
 public function set_currency($currency = "")
