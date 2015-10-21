@@ -16,11 +16,11 @@ $this->session->set_userdata('set_currency', $currency);
 You need function in some controller to set data - Example:
 ```sh
 public function set_currency($currency = "")
- $   {
- $      $currency = ($currency != "") ? $currency : "usd";
+   {
+       $currency = ($currency != "") ? $currency : "usd";
         $this->session->set_userdata('set_currency', $currency);
         redirect(base_url());
-    }
+   }
 ```
 In the end just call helper in view like:
 ```sh
@@ -42,5 +42,5 @@ If helper is loaded in autoload you can use it in evere view file like:
 ```sh
 <?php echo currency($row->price);?> <?php echo label();?>
 ```
-where we have data from database in this example object $row->price and <?php echo label();?> thath call helper function to display currency
-label from session
+where we have data from database in this example object $row->price and <?php echo label();?> thath call helper function to display currency label from session. Use sql file to see table structure.
+
