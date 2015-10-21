@@ -5,6 +5,14 @@ A Codeigniter Helper to convert your price from database from a currency to anot
 
 Is very frequently that inside your sites you need to convert your price from a currency to another.
 You need to have valid database connection and tables to use this helper.
+
+### Simple Usage:
+
+If helper is loaded in autoload you can use it in evere view file like:
+```sh
+<?php echo currency($row->price);?> <?php echo label();?>
+```
+where we pass data from database in helper function like in this example object $row->price and <?php echo label();?> thath call helper function to display currency label from session. Use sql file to see table structure.
 First set link in your site with
 ```sh
 <a href="<?php echo base_url() ?>home/set_currency/usd or eur or bgn">
@@ -36,11 +44,3 @@ Drag and drop the currency_helper.php in into your application directories. Load
 ```sh
 $autoload['helper'] = array('currency');
 ```
-Simple Usage:
-
-If helper is loaded in autoload you can use it in evere view file like:
-```sh
-<?php echo currency($row->price);?> <?php echo label();?>
-```
-where we pass data from database in helper function like in this example object $row->price and <?php echo label();?> thath call helper function to display currency label from session. Use sql file to see table structure.
-
