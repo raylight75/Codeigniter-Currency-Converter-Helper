@@ -13,6 +13,7 @@ If helper is loaded in autoload you can use it in evere view file like:
 <?php echo currency($row->price);?> <?php echo label();?>
 ```
 where we pass data from database in helper function like in this example object $row->price and <?php echo label();?> thath call helper function to display currency label from session. Use sql file to see table structure.
+
 First set link in your site with
 ```sh
 <a href="<?php echo base_url() ?>home/set_currency/usd or eur or bgn">
