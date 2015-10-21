@@ -31,7 +31,7 @@ In the end just call helper in view like:
 CodeIgniter 2.x, 3.x
 PHP 5.2 or gretaer
 
-Installation
+### Installation
 Drag and drop the currency_helper.php in into your application directories. Load it from your application/config/autoload.php using:
 ```sh
 $autoload['helper'] = array('currency');
